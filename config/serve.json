@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://aviolet.sharepoint.com/sites/YelloPortal/SitePages/Home.aspx",
+      "customActions": {
+        "a9d6a1d3-9600-48a9-bf06-0406d274a23f": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": " Header",
+            "Bottom": " Footer"
+          }
+        }
+      }
+    },
+    "headerFooter": {
+      "pageUrl": "https://aviolet.sharepoint.com/sites/YelloPortal/SitePages/Home.aspx",
+      "customActions": {
+        "a9d6a1d3-9600-48a9-bf06-0406d274a23f": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}
