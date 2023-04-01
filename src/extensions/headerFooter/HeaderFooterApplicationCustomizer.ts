@@ -7,6 +7,8 @@ import {
 //import SomeComponent from './SomeComponent';
 //import * as strings from 'HeaderFooterApplicationCustomizerStrings';
 import styles from '../../AppCustomizer.module.scss';
+import '../../../assets/dist/tailwind.css';
+
 //import { escape } from '@microsoft/sp-lodash-subset';
 //import * as React from 'react';
 //import * as ReactDom from 'react-dom';
@@ -36,10 +38,10 @@ export default class HeaderFooterApplicationCustomizer extends BaseApplicationCu
     );
 
     console.log(menu);
-    menu.innerHTML = `<div class="${styles['menu-items']}">
-    <div>Item1</div>
-    <div>Item2</div>
-    <div>Item3</div>
+    menu.innerHTML = `<div class=${styles['menu-items']}>
+    <div class="text-blue-500 hover:text-blue-800">Item1</div>
+    <div class="text-blue-500 hover:text-blue-800">Item2</div>
+    <div class="text-blue-500 hover:text-blue-800">Item3</div>
     </div>`;
     /* if (menu) {
       console.log('menu exist');
